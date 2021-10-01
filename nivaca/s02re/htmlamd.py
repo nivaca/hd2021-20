@@ -52,12 +52,12 @@ def main():
 
     archivo_de_salida = archivo + ".md"
 
-    with open(archivo_de_entrada) as f:
+    with open(archivo_de_entrada, encoding="utf8") as f:
         datos_originales = f.read()
 
     datos_nuevos = reemplazar(datos_originales)
 
-    with open(archivo_de_salida, "w") as f:
+    with open(archivo_de_salida, "w", encoding="utf8") as f:
         f.write(datos_nuevos)
 
 
