@@ -14,6 +14,7 @@ def reemplazar(datos: str) -> str:
         #            <bandera de re>)
 
         (r"Perífrasis", r"Semana", 0),
+
         # (r"", r"", 0),
         # (r"", r"", 0),
         # (r"", r"", 0),
