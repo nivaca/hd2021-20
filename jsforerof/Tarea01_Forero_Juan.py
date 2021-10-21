@@ -48,12 +48,67 @@ def reemplazar(datos: str) -> str:
         
         # Reemplazar los marcadores <h1> y <h2> por los marcadores en Markdown de título (#) y subtítulo (##)
         (r"<h1 .+?>.+?</h1>", r"Does Pizza Protect Against Cancer?\n", 0), # Modificar el título del artículo
-        (r"<h2 .+?>(.+?)</h2>", r"##\1", 0),
+        (r"<h2 .+?>(.+?)</h2>", r"## \1", 0),
+
+        # Crear una lista no numerada usando viñetaas con las intervenciones que hay en el artículo
+        (r'<div role="paragraph"><b>Lina Gabriela Cortés:</b>(.+?)</div>', r"-**Lina Gabriela Cortés:**\1\n", 0),
+        (r'<div role="paragraph"><b>Fabián Severo:</b>(.+?)</div>', r"-**Fabián Severo:**\1\n", 0),
+        (r'<div role="paragraph"><b>Cortés:</b> Lauren Berlant(.+?)</div>', r"-**Cortés:** Lauren Berlant\1\n", 0),
+        (r'<div role="paragraph"><b>Severo</b>: Arnaldo Antunes(.+?)</div>', r"-**Severo:** Arnaldo Antunes\1\r", 0),
+        (r'<div role="paragraph"><b>Cortés:</b> Y en ese universo(.+?)</div>', r"-**Cortes:** Y en ese universo\1\r", 0),
+        (r'<div role="paragraph"><b>Severo</b>: Si iba a hablar(.+?)</div>', r"-**Severo:** Si iba a hablar\1\r", 0),
+        (r'<div role="paragraph"><b>Cortés:</b> Con relación(.+?)</div>', r"-**Cortes:** Con relación\1\r", 0),
+        (r'<div role="paragraph"><b>Severo:</b> ¿Vos sabés(.+?)</div>', r"-**Severo:** ¿Vos sabés\1\r", 0),
+        (r'<div role="paragraph"><b>Cortés:</b> Sobre este(.+?)</div>', r"-**Cortes:** Sobre este\1\r", 0),
+        (r'<div role="paragraph"><b>Severo</b>: Mirá,(.+?)</div>', r"-**Severo:** Mirá,\1\r", 0),
+        (r'<div role="paragraph"><b>Cortés:</b> La frontera(.+?)</div>', r"-**Cortes:** La frontera\1\r", 0),
+        (r'<div role="paragraph"><b>Severo</b>: ¿Vos(.+?)</div>', r"-**Severo:** ¿Vos\1\r", 0),
+        (r'<div role="paragraph"><b>Cortés:</b> ¿Podríamos(.+?)</div>', r"-**Cortés:** ¿Podríamos\1\r", 0),
+        (r'<div role="paragraph"><b>Severo:</b> El portuñol es(.+?)</div>', r"-**Severo:** El portuñol es\1\r", 0),
+        (r'<div role="paragraph"><b>Cortés:</b> El exilio(.+?)</div>', r"-**Cortés:** El exilio\1\r", 0),
+        (r'<div role="paragraph"><b>Severo:</b> Claro, por(.+?)</div>', r"-**Severo:** Claro, por\1\r", 0),
+        (r'<div role="paragraph"><b>Cortés:</b> Frente(.+?)</div>', r"-**Cortés:** Frente\1\r", 0),
+        (r'<div role="paragraph"><b>Severo</b>: Claro, sí,(.+?)</div>', r"-**Severo:** Claro, sí,\1\r", 0),
+        (r'<div role="paragraph"><b>Cortés:</b> Esta influencia(.+?)</div>', r"-**Cortés:** Esta influencia\1\r", 0),
+        (r'<div role="paragraph"><b>Severo:</b> Sí, a mí(.+?)</div>', r"-**Severo:** Sí, a mí\1\r", 0),
+
+
+        # Convertir las citas en formato de citas de Markdown (>)
+        #(r'\“(.+?)\”', r" \n >\1\n", re.DOTALL),
+        
+        (r'\“Hijo, no me hagas (.+?)\” \(28\).', r" \n> Hijo, no me hagas \1 (28).\n ", 0),
+        (r'\“si yo vengo de (.+?)\”.', r" \n> si yo vengo de \1.\n", 0),
+        (r'\“Vo iscrevé (.+?)\”', r" \n> Vo iscrevé \1", 0),
+        (r'\“Voy a escribir (.+?)\”.', r" \n> Voy a escribir \1.\n", 0),      
+        (r'\“Miséria (.+?)\”.', r" \n> Miséria \1.\n", 0),      
+        (r'\“pensá en positivo que (.+?)\”.', r" \n> pensá en positivo que \1.\n", 0),      
+        (r'\“Fabián Severo es el referente que reivindica el portuñol\”', r" \n> Fabián Severo es el referente que reivindica el portuñol", 0),
+        (r'\“Mi madre (.+?)\” \(56\).', r" \n> Mi madre \1 (56).\n", 0),
+        (r'\“En mi cuadra, lo que sobra es madre\”', r" \n> En mi cuadra, lo que sobra es madre\n", 0),
+        (r'\“En mi cuadra, lo que falta es padre\”', r" \n> En mi cuadra, lo que falta es padre\n", 0),
+        (r'\“Queim (.+?)\” \(15\),', r" \n> Queim \1 (15),\n", 0),
+        (r'\“Artigas e uma (.+?)\” \(21\).', r" \n> Artigas e uma \1 (21).\n", 0),
+        (r'\“el río me saco tres veces\”', r" \n> el río me saco tres veces", 0),
+        (r'\“pero no me va a correr de acá\”', r" \n> pero no me va a correr de acá\n", 0),
+        (r'\“Nací perdiendo (.+?)\”', r" \n> Nací perdiendo \1\n", 0),
+        (r'\“Dios creó el mundo en Artigas. (.+?)”,', r" \n> Dios creó el mundo en Artigas. \1,\n", 0),
+        (r'\“Para mí, (.+?)\” \(66\)', r" \n> Para mí, \1 (66).\n", 0),
+        (r'\“Ah no, (.+?)\”,', r" \n> Ah no, \1,\n", 0),
+        (r'\“Bueno, (.+?)\”,', r" \n> Bueno, \1,\n", 0),
+        (r'\“Fabi, no encontré (.+?)\”,', r" \n> Fabi, no encontré \1,\n", 0),
+        (r'\“Fabián, ¿por (.+?)\”,', r" \n> Fabián, ¿por \1,\n", 0),
+        (r'\“¿A vos te parece (.+?)\”.', r" \n> ¿A vos te parece \1.\n", 0),
+        (r'\“Artigas se enllenó (.+?)\”', r" \n> Artigas se enllenó \1", 0),
+        (r'\“pará, este (.+?)\”.', r" \n> pará, este \1.\n", 0),
+        (r'\“El río Cuareim (.+?)\” \(23\).', r" \n> El río Cuareim \1 (23).\n", 0),
+        (r'\“Fabi, no llevés (.+?)\”.', r" \n> Fabi, no llevés \1.\n", 0),
+        (r'\“No seré yo quien (.+?)\”.', r" \n> No seré yo quien \1.\n", 0),
+        
 
         # Eliminar los marcadores de párrafos en marcado html para pasarlos a Markdown
         (r'<div role="paragraph">(.+?)</div>', r"\1\n", 0),
                     
-        #Eliminar distintos marcadores html del documento y reemplazar datos y metadatos
+                #Eliminar distintos marcadores html del documento y reemplazar datos y metadatos
         (r'<div class="logo">.+?</div>', r"", 0),
         (r'<div id="masthead">(.+?)</div>', r"\1", re.DOTALL),
         (r'<div class="masthead-info">(.+?)</div>', r"\1", re.DOTALL),
@@ -81,8 +136,7 @@ def reemplazar(datos: str) -> str:
             # Cambiar palabras clave en inglés
         (r'<div id="keywords-en" .+?>', r"Digestive tract cancers; lycopene; pizza; risk factors.\n", 0),
         (r'</section>(.+?)</section>', r"\1", re.DOTALL),
-        
-
+                
                 #Cambiar más de tres espacios en blanco por sólo uno
         (r"\n{3,}", r"\n", 0),
         
@@ -92,11 +146,11 @@ def reemplazar(datos: str) -> str:
 
         #Cambiar el título del abstract 
         (r"VERSES \*MIXTURADOS\* ON THE URUGUAYAN BORDER: A CONVERSATION WITH FABIÁN SEVERO", r"Does Pizza Protect Against Cancer?", re.DOTALL),
-       
+                                                                                    
                                             #TRABAJO CON LA BIBLIOGRAFÍA
 
         #Cambiar el marcador <h2> de la BIBLIOGRAFÍA
-        (r"<h2>.+?</h2>", r"##REFERENCIAS", 0),
+        (r"<h2>BIBLIOGRAFÍA</h2>", r"## REFERENCIAS", 0),
         
         (r'<div role="doc-biblioentry" .+?>', r"", re.DOTALL),
 
@@ -153,7 +207,7 @@ def reemplazar(datos: str) -> str:
         (r'<a href="https.+?>.+?</a>', r"", 0),
      
         # Eliminar las marcas HTML de las notas del final
-
+        (r"<h2>Notas</h2>", r"## NOTAS", 0),
         (r'<div .+?>', r"", re.DOTALL),
         (r'<a href=.+?>(.+?)</a>', r"Correo electrónico:\1", 0),
         (r'</section>', r"", 0),
@@ -161,12 +215,7 @@ def reemplazar(datos: str) -> str:
         (r'</body>', r"", 0),
         (r'</html>', r"", 0),
         (r'[\n\r]+$', r"", re.DOTALL),
-       
-
-        # (r"", r"", 0),
-        # (r"", r"", 0),
-        # (r"", r"", 0),     
-        
+               
         # hasta aquí: ------------------------
     ]
 
