@@ -91,7 +91,7 @@ def reemplazar(datos: str) -> str:
         (r'\“el río me saco tres veces\”', r" \n> el río me saco tres veces", 0),
         (r'\“pero no me va a correr de acá\”', r" \n> pero no me va a correr de acá\n", 0),
         (r'\“Nací perdiendo (.+?)\”', r" \n> Nací perdiendo \1\n", 0),
-        (r'\“Dios creó el mundo en Artigas. (.+?)”,', r" \n> Dios creó el mundo en Artigas. \1,\n", 0),
+        (r'\“Dios creó el mundo en Artigas. (.+?)”,', r" \n> Dios creó el mundo en Artigas. \1,", 0),
         (r'\“Para mí, (.+?)\” \(66\)', r" \n> Para mí, \1 (66).\n", 0),
         (r'\“Ah no, (.+?)\”,', r" \n> Ah no, \1,\n", 0),
         (r'\“Bueno, (.+?)\”,', r" \n> Bueno, \1,\n", 0),
@@ -139,7 +139,7 @@ def reemplazar(datos: str) -> str:
                 
                 #Cambiar más de tres espacios en blanco por sólo uno
         (r"\n{3,}", r"\n", 0),
-        
+             
                 #Cambiar el marcado hmtl de cursivas (i) y negritas (b) al marcado de estas en Markdown (cursivas: *; negritas: **)
         (r'<i>(.+?)</i>', r"*\1*", 0),
         (r'<b>(.+?)</b>', r"**\1**", 0),
@@ -214,8 +214,9 @@ def reemplazar(datos: str) -> str:
         (r'</article>', r"", 0),
         (r'</body>', r"", 0),
         (r'</html>', r"", 0),
-        (r'[\n\r]+$', r"", re.DOTALL),
-               
+        # Eliminar espacios en blanco que entran en conflicto con el sistema de marcación MARKDOWN
+        (r'/^\s+|\s+$|\s+(?=\s)/g', r"",re.DOTALL),
+                   
         # hasta aquí: ------------------------
     ]
 
