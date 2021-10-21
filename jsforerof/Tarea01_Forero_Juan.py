@@ -21,7 +21,7 @@ def reemplazar(datos: str) -> str:
          
         # Eliminar las marcas <span>
         # Cambiar el número de la publicación
-        (r'(<div property="isPartOf".+?>).+?(</div>)', r"Vol. 107, no. 2", re.DOTALL),    
+        (r'(<div property="isPartOf".+?>).+?(</div>)', r"\n# Tarea 01 \nVol. 107, no. 2", re.DOTALL),    
             # Cambiar el nombre de la revista
         (r'<span property="isPartOf".+?>.+?</span>', r"International Journal of Cancer\n", re.DOTALL), 
             # Cambiar la fecha de publicación de la revista
@@ -216,8 +216,15 @@ def reemplazar(datos: str) -> str:
         (r'</article>', r"", 0),
         (r'</body>', r"", 0),
         (r'</html>', r"", 0),
+        
         # Eliminar espacios en blanco que entran en conflicto con el sistema de marcación MARKDOWN
         (r'/^\s+|\s+$|\s+(?=\s)/g', r"",re.DOTALL),
+        
+        #Solucionar error de marcado MD047
+        (r'1.', r"",0),
+        (r'Douglas Diegues bautiza su escritura como “portuñol salvaje” y funda un movimiento literario.', r'1. Douglas Diegues bautiza su escritura como “portuñol salvaje” y funda un movimiento literario.\n', 0),
+        
+       
                    
         # hasta aquí: ------------------------
     ]
