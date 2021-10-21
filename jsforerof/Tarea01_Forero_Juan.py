@@ -75,7 +75,9 @@ def reemplazar(datos: str) -> str:
 
         # Convertir las citas en formato de citas de Markdown (>)
         #(r'\“(.+?)\”', r" \n >\1\n", re.DOTALL),
-        
+       
+        (r'\“riverense (.+?)\”.', r" \n> riverense \1.\n", 0),              
+        (r'\“as narrativas (.+?)\” \(43\).', r" \n> as narrativas \1 (43).", 0),
         (r'\“Hijo, no me hagas (.+?)\” \(28\).', r" \n> Hijo, no me hagas \1 (28).\n ", 0),
         (r'\“si yo vengo de (.+?)\”.', r" \n> si yo vengo de \1.\n", 0),
         (r'\“Vo iscrevé (.+?)\”', r" \n> Vo iscrevé \1", 0),
