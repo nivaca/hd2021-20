@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               Inscripciones de Alejandra Pizarnik en la portada de la revista
+               <title>Papeles de son Armadans</title> de <date when="1970-12">Diciembre de 1970</date>
+            </title>
+         </titleStmt>
+         <publicationStmt>
+            <p>
+               Codificado por <persName>Wainer Andres Duran Guerrero</persName> como tarea en el curso de Herramientas digitales
+               <date when="2021-10-27">27 de Octubre de 2021</date> en <placeName>Santiago de Cali</placeName>, <placeName>Colombia</placeName>
+            </p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Portada de revista
+               <bibl>
+                  <title type="journal">Papeles de Son Armadans</title>, ejemplar 14 (Diciembre de 1970, volumen 177)
+               </bibl>
+               Tipo: Documento               
+               Material: cartáceo
+               <ref target="https://cvc.cervantes.es/literatura/libros_cortazar/libros_firmados04.htm">
+               </ref>
+            </p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         
+         <div>
+            <p n="1">
+               <title>De <hi rend="mayúsculas">«Papeles de son Armadans»</hi>,
+                  <abbr>n.°<expan>número</expan></abbr> </title> <num value="177"></num>CLXXXVII.
+               <date when="1970-12">Diciembre de 1970</date>
+            </p>
+            
+            <p>
+               <hi rend="itálicas">Tirada aparte de cincuenta ejemplares numerados.</hi>
+            </p>
+            
+            <p>
+               <hi rend="itálicas"><abbr>Ej.<expan>Ejemplar</expan></abbr>
+                  <abbr>n.°<expan>número</expan></abbr></hi> <hi rend="subrayado"></hi>
+            </p>
+         </div>
+            
+         <div type="inscripción1">
+            <p n="2">
+               <lb/><persName>Julio</persName> este textículo les parece joda.
+               <lb/>Solamente vos sabés que el
+               <lb/>más mínimo chiste se crea
+               <lb/>en momentos en que la
+               <lb/>vida <foreign xml:lang="fra">est à l'auteur de la morte</foreign>.
+            </p>
+            <closer>
+               <lb/><salute>Muy tuya</salute> 
+               <signed>
+                  <persName>Alejandra</persName>.
+               </signed>
+            </closer>
+         </div>
+         
+         <div type="inscripción2">
+            <p>
+               <lb/><persName>Julio</persName> fui
+               <lb/>tan abajo. Pero
+               <lb/>no hay fondo
+               <lb/><persName>Julio</persName>, creo que
+               <lb/>no tolero más 
+               <!-- hay un tachón --> <mentioned>las perras
+               <lb/>palabras.</mentioned>
+            </p>
+         </div>
+         
+         <div type="inscripción3">
+            <p>
+               <lb/>La locura, la
+               <lb/>muerte. <persName xml:lang="rus">Nadja</persName>
+               <lb/>no escribe. <persName><addName type="pseudónimo">Don
+               <lb/>Quijote</addName></persName> <!-- Alonso Quijano --> tampoco
+               <lb/><persName>Julio</persName>, odio a
+               <lb/><persName>Artaud</persName> (mentira)
+               <lb/>porque no quisiera
+               <lb/>entender tan 
+               <lb/>sospecho<lb break="no"/>samente bien sus
+               <lb/>posi<unclear>bilidades</unclear> <unclear cert="low">de la</unclear>
+               <lb/><unclear>imposi</unclear>bilidad
+            </p>
+         </div>
+         
+         <div type="inscripción4">
+            <p>
+               <lb/><abbr>PS<expan>Post scriptum</expan></abbr>
+               <lb/>Me excedí, supongo. Y he
+               <lb/>perdido, viejo amigo de tu vieja
+               <lb/>Alejandra que tiene <del>tuvo</del> miedo de
+               <lb/>todo salvo (ahora, oh Julio!) de la 
+               <lb/>locura y de la muerte. (Hace dos meses
+               <lb/>que estoy en el hospital. Excesos y luego
+               <lb/>intento de suicidio -que fracasó, hélas.)
+            </p>
+         </div>
+         
+         <div type="inscripción5">
+            <p n="5">
+               <lb/><abbr>PS</abbr><expan>Post scriptum</expan> -En el hospital aprendo
+               <lb/>a convivir con los últimos desechos.
+               <lb/>Mi mejor amiga es una sirvienta
+               <lb/>de 18 años que mató a su hijo. Empecé
+               <lb/>a leer diarios. Te apruebo mucho
+               <lb/>políticamente. Tu poema de <hi rend="subrayado"><title>Panorama</title></hi>
+               <lb/>es grande porque <hi rend="subrayado">me hizo bien</hi> (lo leí en el
+               <lb/>hospital).
+            </p>
+         </div>
+        
+      </body>
+  </text>
+</TEI>
