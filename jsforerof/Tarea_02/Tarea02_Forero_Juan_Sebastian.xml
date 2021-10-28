@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         
+         <titleStmt>
+            <title>
+               Dedicatoria autógrafa de <persName>Alejandra Pizarnick</persName> 
+               a <persName>Julio Cortázar</persName> en el libro
+               <name>La pájara en el ojo ajeno</name>. 
+           </title>
+            <author>Alejandra Pizarnick</author>
+         </titleStmt>
+       
+         <publicationStmt>
+            <publisher>Juan Sebastián Forero Frasser</publisher>
+            <pubPlace>Bogotá, Colombia</pubPlace>
+            <date when="2021-10-29">29 de octubre de 2021</date>
+         </publicationStmt>
+         
+         <sourceDesc>
+            <p>                 
+              <ref target="https://cvc.cervantes.es/literatura/libros_cortazar/libros_firmados04.htm"></ref>
+            </p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+   
+ <text xml:lang="spa">
+   <body>
+ 
+      <div type= "Información_página">
+         <p>
+            <lb n="1"/>De «<name>PAPELES DE SON ARMADANS</name>», n°. <num>CLXXVII</num>. <date>Diciembre de 1970</date>.
+            <lb n="2"/>Tirada aparte de cincuenta
+            <lb n="3"/>ejemplares numerados. 
+            <lb n="4"/>Ej. n°. <num>14</num>. 
+         </p>
+      </div>
+      
+      <div type= "introducción">
+         <p>
+            <lb n="1"/> <persName>Julio</persName><corr>,</corr> este textículo les parece joda. 
+            <lb n="2"/> Solamente vos <choice><orig>sabés</orig><reg>sabes</reg></choice> que el 
+            <lb n="3"/> más mínimo chiste se crea 
+            <lb n="4"/> en momentos en que la 
+            <lb n="5"/> vida <foreign xml:lang="fr">est à l'auteur de la morte.</foreign> 
+         </p>
+            <lb n="6"/>
+             <closer>
+                  Muy tuya<corr>,</corr>
+                  <signed>
+                     <persName>
+                        Alejandra
+                      </persName>.
+                  </signed>
+             </closer>
+      </div> 
+         
+      <div type="Recuadro_der_superior">
+         <p>
+            <lb n="1"/>Julio<corr>,</corr> 
+            <lb n="2"/>fui tan abajo. Pero 
+            <lb n="3"/>no hay fondo.
+            <lb n="4"/><persName>Julio</persName>, creo que 
+            <lb n="5"/>no tolero más 
+            <lb n="2"/>"las perras palabras".
+         </p>           
+      </div>
+      
+      <div type="Recuadro_izq_superior">
+         <p>
+            <lb n="1"/>La locura, 
+            <lb n="2"/>la muerte. <persName>Nadja</persName>
+            <lb n="3"/>no escribe. 
+            <persName> Don 
+            <lb n="4"/>Quijote
+            </persName><sic>,</sic> tampoco.
+            <lb n="5"/><persName>Julio</persName>, odio a 
+            <lb n="6"/><persName>Artaud</persName> (mentira) 
+            <lb n="7"/>porque no quisiera 
+            <lb n="8"/>entender tan sospecho
+            <lb n="9" break="no"/> samente bien sus posibilidades de la imposibilidad.
+         </p>   
+      </div>
+         
+      <div type="PS_recuadro_der_superior">
+         <p>
+            <lb n="1"/>P.S.<sic>_</sic>En el hospital aprendo 
+            <lb n="2"/>a convivir con los últimos desechos. 
+            <lb n="3"/>Mi mejor amiga es una sirvienta 
+            <lb n="4"/>de 18 años que mató a su hijo. Empecé 
+            <lb n="5"/>a leer diarios. Te apruebo mucho 
+            <lb n="6"/>políticamente. Tu poema de Panorama 
+            <lb n="7"/>es grande porque me hizo bien 
+            <lb n="8"/><corr>(</corr>lo leí en el hospital).  
+         </p>
+       </div>  
+         
+       <div type="PS_final">
+          <p>
+             <lb n="1"/>P.S.
+             <lb n="2"/>Me excedí, supongo. Y he 
+             <lb n="3"/>perdido, viejo amigo de tu vieja 
+             <lb n="4"/><persName>Alejandra</persName> que <subst><del>tuvo</del><add place="arriba">tiene</add></subst> miedo de 
+             <lb n="5"/>todo <choice>
+                <sic>salvo ¡ahora oh, Julio!)</sic>
+                <corr>salvo (ahora, ¡Oh, Julio!)</corr>
+             </choice> de la 
+             <lb n="6"/> locura y de la muerte. <corr>(</corr>Hace dos meses 
+             <lb n="7"/>que estoy en el hospital. Excesos y luego 
+             <lb n="8"/>intento de suicidio <sic>-</sic>que fracasó, hélas<sic>.</sic>)<corr>.</corr>
+          </p>
+       </div>  
+    </body>
+  </text>
+</TEI>
