@@ -32,12 +32,23 @@
  <text xml:lang="spa">
    <body>
  
-      <div type= "Información_página">
+      <div type= "Información_página"> <!-- Codificación del texto de la página en la que se hizo la dedicatoria -->
          <p>
-            <lb n="1"/>De «<name>PAPELES DE SON ARMADANS</name>», n°. <num>CLXXVII</num>. <date>Diciembre de 1970</date>.
-            <lb n="2"/>Tirada aparte de cincuenta
+            <lb n="1"/>De «<name>PAPELES DE SON ARMADANS</name>», 
+               <choice>
+                  <abbr>n°.</abbr>
+                  <expan>Número.</expan>
+               </choice> 
+               <num value="177">CLXXVII</num> 
+               <date>Diciembre de 1970</date>.
+            <lb n="2"/>Tirada aparte de <num value="50">cincuenta</num>
             <lb n="3"/>ejemplares numerados. 
-            <lb n="4"/>Ej. n°. <num>14</num>. 
+            <lb n="4"/>
+            <choice>
+               <abbr>Ej. n°.</abbr>
+               <expan>Ejemplar número.</expan>
+            </choice> 
+            <num value="14">14</num>. 
          </p>
       </div>
       
@@ -47,10 +58,13 @@
             <lb n="2"/> Solamente vos <choice><orig>sabés</orig><reg>sabes</reg></choice> que el 
             <lb n="3"/> más mínimo chiste se crea 
             <lb n="4"/> en momentos en que la 
-            <lb n="5"/> vida <foreign xml:lang="fr">est à l'auteur de la morte.</foreign> 
-         </p>
+            <lb n="5"/> vida <foreign xml:lang="fr">est à 
+               <subst>
+                  <del><gap extent="1 caracter"/></del>
+                  <add place="inline">l'</add></subst>auteur de la morte</foreign>. 
             <lb n="6"/>
-             <closer>
+         </p> 
+            <closer>
                   Muy tuya<corr>,</corr>
                   <signed>
                      <persName>
@@ -67,7 +81,7 @@
             <lb n="3"/>no hay fondo.
             <lb n="4"/><persName>Julio</persName>, creo que 
             <lb n="5"/>no tolero más 
-            <lb n="2"/>"las perras palabras".
+            <lb n="2"/><del><gap extent="1 caracter"/></del>"las perras palabras".
          </p>           
       </div>
       
@@ -83,26 +97,30 @@
             <lb n="6"/><persName>Artaud</persName> (mentira) 
             <lb n="7"/>porque no quisiera 
             <lb n="8"/>entender tan sospecho
-            <lb n="9" break="no"/> samente bien sus posibilidades de la imposibilidad.
+            <lb n="9" break="no"/>samente bien sus posibi<unclear cert="high">lidades</unclear> 
+            <supplied reason="ilegible" source="transcripción de Blanca Berasategui para El Cultural">
+               de la
+            </supplied>
+            <unclear cert="medium">im</unclear>posibilidad.
          </p>   
       </div>
          
       <div type="PS_recuadro_der_superior">
          <p>
-            <lb n="1"/>P.S.<sic>_</sic>En el hospital aprendo 
+            <lb n="1"/><choice><abbr>P.S.</abbr><expan cert="high">Post Scriptum</expan></choice><sic>_</sic>En el hospital aprendo 
             <lb n="2"/>a convivir con los últimos desechos. 
             <lb n="3"/>Mi mejor amiga es una sirvienta 
             <lb n="4"/>de 18 años que mató a su hijo. Empecé 
             <lb n="5"/>a leer diarios. Te apruebo mucho 
-            <lb n="6"/>políticamente. Tu poema de Panorama 
-            <lb n="7"/>es grande porque me hizo bien 
+            <lb n="6"/>políticamente. Tu poema de <hi rend="subrayado">Panorama</hi> <!-- el subrayado parece en el texto original enfático y no estructural, de ahí que se codifique aquí -->
+            <lb n="7"/>es grande porque <hi rend="subrayado">me hizo bien</hi> <!-- el subrayado parece en el texto original enfático y no estructural, de ahí que se codifique aquí -->
             <lb n="8"/><corr>(</corr>lo leí en el hospital).  
          </p>
        </div>  
          
        <div type="PS_final">
           <p>
-             <lb n="1"/>P.S.
+             <lb n="1"/><choice><abbr>P.S.</abbr><expan cert="high">Post Scriptum</expan></choice>
              <lb n="2"/>Me excedí, supongo. Y he 
              <lb n="3"/>perdido, viejo amigo de tu vieja 
              <lb n="4"/><persName>Alejandra</persName> que <subst><del>tuvo</del><add place="arriba">tiene</add></subst> miedo de 
