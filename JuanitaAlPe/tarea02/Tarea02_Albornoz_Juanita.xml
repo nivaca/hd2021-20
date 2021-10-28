@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title> Sin título</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>
+               Codificado por <persName>Juanita Albornoz</persName> en la clase de Humanidades Digitales
+               <date when="2021-10-26">Octubre 26 de 2021</date>.
+               <name> Universidad de los Andes</name>.
+               <placeName>Bogotá</placeName>
+               <placeName>Colomia</placeName>
+            </p>
+         </publicationStmt>
+         <sourceDesc> 
+            <!-- Dedicatoria a Julio escrita en el libro La pájara en el ojo ajeno de Alejandra Pizarnik-->
+            <p>
+              
+               <ref>
+                  target="https://cvc.cervantes.es/literatura/libros_cortazar/libros_firmados04.htm"
+               </ref>
+            </p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+   <text xml:lang="spa">
+      <body>
+         <div type="cuerpo">
+            <p n="1">
+               <persName>Julio</persName> este textículo les parece joda. 
+               Solamente vos sabés que el más mínimo chiste
+               se crea en momentos en que la vida <foreign xml:lang="fr">est à lauteur de la morte</foreign>.
+            </p>    
+            </div>
+         
+         <!-- Aquí está el cierre de la dedicatoria-->
+           <div type="cierre">
+              <p></p>
+              <closer>
+                 <salute>Muy tuya </salute> 
+                 <signed>
+                     <persName>Alejandra</persName>.
+                    </signed>
+              </closer>
+              </div>
+         
+         <!-- Aquí empiezan las posdatas y los cuadros de texto añadidos en las márgenes-->
+        
+         <div type="posdata">
+            <p n="2">
+               PS
+               Me excedí, supongo.
+               Y he perdido, viejo amigo de tu
+               vieja <persName>Alejandra</persName> que
+               <subst>
+                  <del>tuvo</del>
+                  <add>tiene</add>
+               </subst> 
+               miedo de todo salvo
+               (ahora, oh <persName>Julio</persName>) de la locura y de la muerte. (Hace
+               dos meses que estoy en el hospital. Excesos y luego
+               intento de suicidio -que fracasó, hélas)
+            </p>
+            
+            <p n="3">
+               <add> <persName>Julio</persName> fui tan abajo. Pero no hay fondo
+                  <persName>Julio</persName>, creo que no tolero más las perras palabras
+               </add>               
+            </p>
+            
+            <p n="4">
+               <add>La locura, la muerte. <persName>Nadja</persName> no escribe.
+                  <name>Don Quijote</name> tampoco.
+                  <persName> Julio</persName>, odio a <persName>Artaud </persName>(mentira)
+                  porque no quisiera entender tan sospechosamente bien sus posibilidades de la imposibilidad.
+               </add> 
+            </p>
+            
+            <p n="5">
+               PS En el hospital aprendo a convivir con los últimos desechos.
+               Mi mejor amiga es una sirvienta de 18 años que mató a su hijo.
+               Empecé a leer Diarios. 
+               Te apruebo mucho políticamente.
+               Tu poema de Panorama es grande porque me hizo bien (lo leí en el hospital). 
+            </p>
+            
+            <!-- Parte mecanografiada del papel-->
+            <div type="otro">
+               <ab>De "PAPELES DE SON ARMADANS", n.° CLXXVII. <date when="1970-12">Diciembre de 1970</date>.
+                  <lb/>Tirada aparte de cincuenta
+                  <lb/>ejemplares numerados. 
+                  <lb/>Ej. n° 14
+               </ab>
+            </div>
+         </div>
+      </body>
+  </text>
+</TEI>
