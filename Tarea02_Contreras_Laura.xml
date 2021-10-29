@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>La pájara en el ojo ajeno</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Codificado por 
+               <persName>Laura Contreras</persName> 
+               para el curso de herramientas digitales, 
+               <date when-iso="2021-10-29">octubre 29 de 2021</date>, 
+               para la Maestría en educación de la 
+               <orgName>Universidad de Los Andes,</orgName> 
+               <placeName>
+                  <settlement>Bogotá</settlement>
+                  <country>Colombia</country>
+                  <country xml:lang="spa"></country>.
+               </placeName>   
+            </p>
+         </publicationStmt>
+         <sourceDesc>
+            <p><ref target="https://cvc.cervantes.es/literatura/libros_cortazar/libros_firmados04.htm">https://cvc.cervantes.es/literatura/libros_cortazar/libros_firmados04.htm</ref></p>
+         </sourceDesc>
+         
+      </fileDesc>
+  </teiHeader>
+   <text xml:lang="spa">
+      <body>
+         <div type="saludo">
+            <opener>
+               <salute>
+                  <persName>Julio</persName>, 
+                  este textículo les parece joda. Solamente vos sabés que el más mínimo chiste se crea en momentos en que la vida <foreign xml:lang="fr">est à l</foreign>
+                  <subst>
+                     <del>l</del>
+                     <add></add>
+                  </subst>
+                  <foreign xml:lang="fr">auteur de la morte.</foreign>
+                  Muy tuya
+               </salute>
+               <signed>
+                  <persName>
+                     Alejandra
+                  </persName>.
+               </signed>   
+            </opener>
+         </div>
+         <div type="cita">
+            <p n="1">
+               <persName>Julio</persName>, fuí tan abajo. Pero no hay fondo. 
+               <persName>Julio</persName>, creo que no tolero más <quote>"las perras palabras"</quote>.
+            </p>
+            <p n="2">La locura, la muerte. <persName>Nadja</persName> no escribe. <persName>Don Quijote</persName>, tampoco. 
+               <persName>Julio</persName>, odio a 
+               <persName>Artaud</persName> (mentira)
+               <l>porque no quisiera entender tan sospechosamente bien sus posibi 
+                  <damage agent='excluded' extent='left part'>
+                     lidades lidad.
+                     <supplied>
+                        posibilidades de la imposibilidad.
+                     </supplied>
+                  </damage> 
+               </l>
+            </p>
+         </div>
+         <div type="info-editorial">
+            <p><quote>De PAPELES DE SON ARMANDAS</quote>, 
+               <choice>
+                  <abbr>
+                     n.
+                  </abbr>
+                  <expan cert="high">
+                     número
+                  </expan>
+               </choice>
+               <foreign xml:lang="lat">CLXXVII.</foreign> 
+               <date when-iso="1970-12">Diciembre de 1970</date>.
+            </p>
+            <p>
+               <lb/>Tirada aparte de cincuenta 
+               <lb/>ejemplares numerados
+            </p>  
+            <p>
+               <choice>
+                  <abbr>
+                     Ej.
+                  </abbr>
+                  <expan cert="high">
+                     Ejemplar
+                  </expan>
+               </choice>
+               <choice>
+                  <abbr>n.</abbr>
+                  <expan cert="high">
+                     número
+                  </expan>
+               </choice> 
+               <num type="cardinal" value="14">14</num>
+            </p>
+         </div>
+         <postscript>
+            <label>
+               P.S.
+            </label>
+            <p n="3">
+               Me excedí, supongo. Y he podido, viejo amigo de tu vieja 
+               <persName>Alejandra</persName> que 
+               <subst>
+                  <del>tuvo</del>
+                  <add>tiene</add>
+               </subst> 
+               miedo de todo salvo (ahora, oh 
+               <persName>Julio</persName>!) 
+               de la locura y de la muerte. Hace <num type="cardinal" value="2">dos</num> meses que estoy en el hospital. Excesos y luego intento de suicidio   que fracasó, hélas.)
+            </p>
+         </postscript>
+         
+        <postscript>
+           <label>
+              P.S
+           </label>
+           <p n="4">
+              En el hospital aprendo a convivir con los últimos desechos. Mi mejor amiga es una sirvienta de 
+              <num type="cardinal" value="18">18</num> 
+              años que mató a su hijo. Empecé a leer diarios. Te apruebo mucho políticamente. Tu poema de <name>Panorama</name> es grande porque me hizo bien (lo leí en el hospital)
+           </p>
+        </postscript>
+           
+      </body>
+  </text>
+</TEI>
