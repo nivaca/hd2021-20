@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+              Dedicatoria en 'La pájara en el ojo ajeno'. De: <persName>Alejandra Pizarnik</persName>. Para: <persName>Julio Cortázar.</persName> <date>Diciembre de 1970.</date>
+            </title>
+         </titleStmt>
+         <publicationStmt>
+            <p>
+               Ejercicio de codificación para clase. <persName>Camila Carvajal Oquendo</persName> <date>29 de octubre de 2021</date>.
+            </p>
+         </publicationStmt>
+         <sourceDesc>
+            <!-- Para recordar, mojones: [lb] salto de línea, [pb] salto de página, [cb] salto de columna. Contienen atributos (p.e.: <pb n="2"></pb> *salto a la página dos. Mojones no tienen contenido-->
+            <p>
+               Publicado en <date>1970</date>
+               N.º de páginas: <num>8</num>.
+               Transcripción realizada por <persName>Blanca Berasategui</persName>, para <name>El Cultural</name>.
+               <ref 
+                  target="https://cvc.cervantes.es/literatura/libros_cortazar/libros_firmados04.htm">
+               </ref>
+            </p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+   
+  <text>
+     <!-- Para recordar: para codificar páginas preliminares <front>. Para codificar elementos finales de un manuscrito (apéndice, glosario, índice, etcétera) <back>-->
+     <front>
+       <div type="Impreso">
+        <note>
+           <quote> De: 'PAPELES DE SON ARMADANS', <num>n CLXXVII.</num> <date>Diciembre de 1970.</date>
+           </quote>
+        </note>
+        <lb n="1"></lb>
+        <note>
+           <quote> Tirada aparte de cincuenta ejemplares numerados.
+           </quote>
+        </note>
+        <lb n="1"></lb>
+            <list rend="Ejemplar">
+             <item n="14">Ej. n° 14 </item>
+          </list>
+       </div>
+     </front>
+              
+     <body>  
+        
+        <div type="Dedicatoria">
+           <p>
+              <q>Julio
+                 <rs type="Persona">Julio</rs>
+              </q>, este textículo les parece joda. 
+              <lb/> Solamente vos sabés que el 
+              <lb/> más mínimo chiste se crea 
+              <lb/> en momentos en que <foreign xml:lang="french">la vida est à lauteur de la morte</foreign>. 
+              <lb/> Muy tuya, <persName>Alejandra</persName> . </p>
+           <lb n="1"></lb>
+           <p> 
+              <q>Julio
+                 <rs type="Persona">Julio</rs> </q> fui tan abajo. Pero no hay fondo </p>
+           <lb n="1"></lb>
+           <p> 
+              <q>Julio
+                 <rs type="Persona">Julio</rs> </q> creo que no tolero más las perras palabras
+                 La locura, la muerte. <name>Nadja</name> no escribe. <name>Don Quijote</name> tampoco. </p>
+           <lb n="1"></lb>           
+           <p> <q>Julio
+              <rs type="Persona">Julio</rs> </q> odio a <name>Artaud</name> (mentira) porque no quisiera entender tan sospechosamente bien sus posibilidades de la imposibilidad. </p>           
+           <lb n="1"></lb>
+        </div>
+        
+        <div type="PS">
+           <p> PS
+           <lb/>
+              Me excedí, supongo. Y he 
+              <lb/> perdido, viejo amigo de tu vieja 
+              <lb/> <name>Alejandra</name> que <subst> <del>tuvo </del><add>tiene</add></subst> miedo de 
+              <lb/> todo salvo (ahora, oh <name>Julio</name>) de la 
+              <lb/> locura y de la muerte. (Hace <time>dos meses</time> 
+              <lb/> que estoy en el <placeName>hospital</placeName>. Excesos y luego 
+              <lb/> intento de suicidio que fracasó, hélas) </p>
+           <p> PS En el <placeName>hospital</placeName> aprendo a convivir con los últimos desechos. Mi mejor amiga es una sirvienta de 18 años que mató a su hijo. Empecé a leer Diarios. Te apruebo mucho políticamente. Tu poema de Panorama es grande porque me hizo bien (lo leí en el <placeName>hospital</placeName>). </p>
+        </div>       
+     </body>
+  </text>
+</TEI>
