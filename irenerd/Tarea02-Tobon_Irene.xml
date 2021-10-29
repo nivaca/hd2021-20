@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               Dedicatoria de <persName>Alejandra Pizarnik</persName> a <persName>Julio Cortázar</persName>, 
+            </title>
+         </titleStmt>
+         <publicationStmt>
+            <p>
+               Codificado por: <persName>Irene Tobón</persName> 
+               para el curso de Humanidades Digitales, dictado por <persName>Nicolás Vaughn</persName>,
+               <date when="2021-10-29">Octubre 29 de 2021</date>, 
+               <name>Universidad de los Ándes</name>, 
+               <placeName>Bogotá</placeName>,
+               <placeName>Colombia</placeName>
+            </p>
+         </publicationStmt>
+         <sourceDesc>
+            <!-- este es la infromación de la fuente original -->
+            <p>
+               Título: Dedicatoria de <persName>Alejandra Pizarnik</persName> a <persName>Julio Cortázar</persName> en el libro La pájara en el ojo ajeno
+               Creador: <persName>Alejandra Pizarnik</persName>
+               Fecha de creación: No especificada
+               Dimensiones físicas: No especificadas
+               Procedencia: Biblioteca personal de <persName>Julio Cortázar</persName>
+               Tipo: Página de libro
+               Derechos: <name>Instituto Cervantes - Centro Virtual Cervantes</name>
+               Transcripción <persName>Blanca Berasategui</persName> para <name>El Cultural</name>
+               Técnica: Paper
+               <ref target="https://cvc.cervantes.es/literatura/libros_cortazar/libros_firmados04.htm"/>
+            </p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text xml:lang="spa">
+      <body>
+         <div type= "dedicatoria">
+            <p>
+               <lb/><persName>Julio</persName> este textículo les parece joda. 
+               <lb/>Solamente vos sabés que el 
+               <lb/>más mínimo chiste se crea 
+               <lb/>en momentos en que la 
+               <lb/>vida <foreign xml:lang="fr">est à l'auteur de la morte</foreign>. 
+            </p>
+         </div>
+         
+         <div type= "Firma">
+            <salute>Muy tuya</salute>
+            <signed> 
+               <persName>Alejandra</persName>.
+            </signed>
+         </div>
+         
+         <div type= "nota_lateral" n="1">
+            <p>
+               <lb/><persName>Julio</persName> fui 
+               <lb/>tan abajo. Pero 
+               <lb/>no hay fondo
+               <lb/><persName>Julio</persName>, creo que 
+               <lb/>no tolero más 
+               <lb/><q>las perras palabras</q>
+            </p>
+         </div>
+         
+         <div type= "impresion">
+            <p>
+               <lb/>De PAPELES DE SON ARMADANS , <choice>
+                  <abbr>no.</abbr>
+                  <expan cert="high">número</expan>
+               </choice> 
+               CLXXVII. <date>Diciembre de 1970</date>.
+               <lb/>Tirada aparte de cincuenta
+               <lb/>ejemplares numerados
+               <lb/><choice>
+                  <abbr>Ej.</abbr>
+                  <expan cert= "high">Ejemplar</expan>
+               </choice> <choice>
+                  <abbr>no.</abbr>
+                  <expan cert="high">número</expan>
+               </choice> 14
+            </p>
+         </div>
+         
+         <div type= "nota_lateral" n="2">
+            <p>
+               <lb/>La locura, la 
+               <lb/>muerte. <persName>Nadja</persName> 
+               <lb/>no escribe. <name>Don 
+                  <lb/>Quijote </name>tampoco.
+               <lb/><persName>Julio</persName>, odio a 
+               <lb/><persName>Artaud</persName> (mentira) 
+               <lb/>porque no quisiera 
+               <lb/>entender tan sospecho
+               <lb break="no"/>samente bien sus 
+               <lb/>posibilidades de la imposibilidad.
+            </p>
+         </div>
+            
+            
+               <postscript n="1">
+            <label>PS</label>
+         <p>
+            <lb/>Me excedí, supongo. Y he
+            <lb/>perdido, viejo amigo de tu vieja
+            <lb/><persName>Alejandra</persName> quetiene miedo de
+            <lb/>todo salvo (ahora, oh <persName>Julio</persName>!) de la
+            <lb/>locura y de la muerte. (Hace dos meses
+            <lb/>que estoy en el hospital. Excesos y luego
+            <lb/>intento de suicidio que fracasó, hélas)
+         </p>
+            </postscript>
+         
+         <postscript n="2">
+            <label>PS </label>
+            <p>
+               <lb/>En el hospital aprendo
+               <lb/>a convivir con los últimos desechos.
+               <lb/>Mi mejor amiga es una sirvienta
+               <lb/>de 18 años que mató a su hijo. Empecé
+               <lb/>a leer Diarios. Te apruebo mucho
+               <lb/>políticamente. Tu poema de <emph>Panorama</emph>
+               <lb/>es grande porque <emph>me hizo bien</emph> (lo leí en el hospital).</p>
+         </postscript>
+         
+         
+      </body>
+   </text>
+</TEI>
