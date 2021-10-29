@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>La pájara en el ojo ajeno </title>
+            <author>Alejandra Pizarnik</author>
+         </titleStmt>
+         <publicationStmt>
+            <p> Texto codificado por <persName>Isabel Mosquera Duque</persName> para el curso de
+               Herramientas Digitales, <date when="2021-10-24">Octubre 24 del 2021</date>, <name
+                  type="universidad">Universidad de los Andes.</name>
+               <placeName>Bogotá,</placeName>
+               <placeName>Colombia.</placeName>
+            </p>
+         </publicationStmt>
+         <sourceDesc>
+            <p> 
+               <lb/><placeName>Madrid</placeName> - <placeName>Palma de Mallorca</placeName>
+               <date when="1970"><lb/>MCMLXX</date> 
+               
+               <lb/>Transcripción de <persName>Blanca
+                  Berasategui</persName> para <name type="revista">El Cultural</name>
+             
+               <ref
+                  target="https://cvc.cervantes.es/literatura/libros_cortazar/libros_firmados04.htm"
+               > </ref>
+            </p>
+            
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   
+   <text xml:lang="spa">
+      <body>
+         
+         <div type="impreso"><p> 
+            <lb/>De 
+            <name type="revista">"PAPELES DE SON ARMADANS"</name>, 
+            <num type="numero">nº. CLXXVII. </num>
+           <date when="1970-12">Diciembre de 1970</date> 
+            
+            <lb/>Tirada aparte de cincuenta ejemplares
+         numerados. 
+            
+            <lb/>Ej. <num type="ejemplar">nº 14 </num> 
+            </p>
+         </div>
+
+     
+
+         <div type="dedicatoria_1">
+            <p>
+              <persName>Julio</persName> "este" <unclear>textículo</unclear> les parece joda. Solamente vos sabés que el
+               más mínimo chiste se crea en momentos en que la vida <unclear>ést à l</unclear><unclear>auteur de la morte</unclear>. Muy
+               tuya <persName>Alejandra</persName>.</p>
+         </div>
+
+
+            <div type="dedicatoria_2"> <p> 
+               <lb/><persName>Julio,</persName> fui tan abajo. Pero no hay fondo.  
+               <lb/><persName>Julio</persName>, creo que no tolero más "las perras palabras" 
+            </p>
+            </div>
+
+
+            <div type="dedicatoria_3"><p>La locura, la muerte. <persName>Nadja</persName> no escribe. <persName>Don Quijote</persName>
+               tampoco.<persName>Julio</persName>, odio a Artaud (mentira) porque no quisiera entender tan
+               sospechosamente bien sus posibilidades de la imposibilidad.
+            </p>
+            </div>
+
+        
+         <div type="postscript_1">
+            <p><label>P.S</label></p>
+
+            <postscript>
+               <p>Me excedí, supongo. Y he perdido, viejo amigo de tu vieja
+                     <persName>Alejandra</persName> que <subst><del><unclear>tengo</unclear></del><add>tiene</add></subst> miedo de todo salvo (ahora, oh
+                     <persName>Julio!</persName>) de la locura y de la muerte. (Hace dos meses que
+                  estoy en el hospital. Excesos y luego intento de suicidio -que fracasó, hélas.)</p>
+            </postscript>
+             </div>
+
+
+        <div type="postscript_2"> 
+           
+           <p><label>P.S</label></p>
+           
+           <postscript>
+            <p>En el hospital aprendo a convivir con los últimos desechos. Mi mejor amiga es una
+               sirvienta de 18 años que mató a su hijo. Empecé a leer Diarios. Te apruebo mucho
+               políticamente. Tu poema de <metamark function="underline">Panorama</metamark> es grande porque me hizo bien (lo leí en el
+               hospital).</p>
+         </postscript>
+        </div>
+         
+
+      </body>
+      
+   </text>
+</TEI>
