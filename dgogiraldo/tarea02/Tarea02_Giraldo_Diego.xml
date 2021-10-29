@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               Página de La pájara en el ojo ajeno, con dedicatoria autógrafa.
+            </title>
+            <author>Alejandra Pizarnik</author>
+         </titleStmt>
+         <publicationStmt>
+               <publisher>Diego Giraldo</publisher>
+               <date when="2021-10-29">octubre 29 de 2021</date> 
+               <pubPlace>Universidad de los Andes.
+               <placeName>Bogotá,</placeName>, 
+               <placeName>Colombia</placeName>
+               </pubPlace>  
+         </publicationStmt>
+         
+         <sourceDesc>
+            <p>
+               Elemento: Página de libro.
+               Procedencia: Exposición "Los libros de <persName>Cortázar</persName>"
+               del Centro Virtual Cervantes
+               reunida y comentada por <persName>Jesús Marchamalo</persName>.
+               Tipo: Dedicatoria.
+               Derechos: Fundación <persName>Juan March</persName>.
+               <ref target="https://cvc.cervantes.es/literatura/libros_cortazar/libros_firmados04.htm">
+               </ref>
+            </p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+   
+  <text xml:lang="spa">
+      <body>
+         <div type="impreso">
+            <ab>
+               <stamp>
+                  <lb/>De «PAPELES DE <placeName>SON ARMADANS</placeName>», n.° <num>CLXXVII</num>. 
+                  <date when="1970-12">Diciembre de 1970.</date>
+                  <lb/>Tirada aparte de <num type="cardinal">cincuenta</num>
+                  <lb/>ejemplares numerados.
+                  <lb/>Ej n.° <num type="ordinal">14</num>
+               </stamp>
+            </ab>
+         </div>
+         <div type="manuscrito">
+         <p n="1">
+            <persName>Julio</persName>, este textículo <hi rend="quotes">"les"</hi> parece joda.
+            Solamente vos sabés que el
+            más mínimo chiste se crea
+            en momentos en que la
+            vida <foreign xml:lang="fra">est à <del type="overstrike">l</del>l'auteur de la mort.</foreign>
+         </p>
+            
+         <p n="2">
+            <persName>Julio</persName>, fui tan abajo. Pero no hay fondo.
+            <persName>Julio</persName>, creo que no tolero más
+            <hi rend="quotes">"las perras palabras."</hi>      
+         </p>
+         
+         <p n="3">
+            La locura, la muerte. <persName>Nadja</persName> no escribe. <persName>Don Quijote</persName>, tampoco.
+            <persName>Julio</persName>, odio a <persName>Artaud</persName> (mentira) porque no quisiera entender
+            tan sospechosamente bien sus posibilidades de la imposibilidad. 
+         </p>
+         
+            <postscript>
+               <label><abbr>P.S.</abbr><expan>Postscript</expan></label>
+               <p n="4">
+                  Me excedí, supongo. Y he perdido, viejo amigo de tu vieja <persName>alejandra</persName>
+            que <del type="overstrike">tuvo</del> <add place="above">tiene</add> miedo de todo salvo (ahora, oh <persName>Julio</persName>!) de la locura y de la muerte.
+                  (Hace dos meses que estoy en el hospital. Excesos y luego intento de suicidio -que fracasó, <foreign xml:lang="fra">hélas</foreign>.)  
+               </p>
+            </postscript>
+         
+         <postscript>           
+            <label><abbr>P.S.</abbr><expan>Postscript</expan></label> 
+            <p n="5">- En el hospital aprendo a convivir con los últimos desechos.
+            Mi mejor amiga es una sirvienta de 18 años que mató a su hijo.
+            Empecé a leer diarios. Te apruebo mucho políticamente.
+            Tu poema de <hi rend="underline">Panorama</hi> es grande porque <hi rend="underline">me hizo bien</hi> (lo leí en el hospital). 
+            </p>
+         </postscript>
+            
+            <closer> 
+               <salute>Muy tuya</salute>
+               <signed>
+                  <persName>alejandra.</persName>
+               </signed>
+            </closer>
+            
+         </div>
+      </body>
+  </text>
+</TEI>
