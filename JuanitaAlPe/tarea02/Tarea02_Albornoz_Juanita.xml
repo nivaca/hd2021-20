@@ -10,11 +10,11 @@
          </titleStmt>
          <publicationStmt>
             <p>
-               Codificado por <persName>Juanita Albornoz</persName> en la clase de Humanidades Digitales
-               <date when="2021-10-26">Octubre 26 de 2021</date>.
+               Codificado por <persName>Juanita Albornoz Pelayo</persName> en la clase de Herramientas Digitales 2021
+               <date when="2021-10-28">Octubre 28 de 2021</date>.
                <name> Universidad de los Andes</name>.
                <placeName>Bogotá</placeName>
-               <placeName>Colomia</placeName>
+               <placeName>Colombia</placeName>
             </p>
          </publicationStmt>
          <sourceDesc> 
@@ -32,9 +32,11 @@
       <body>
          <div type="cuerpo">
             <p n="1">
-               <persName>Julio</persName> este textículo les parece joda. 
-               Solamente vos sabés que el más mínimo chiste
-               se crea en momentos en que la vida <foreign xml:lang="fr">est à lauteur de la morte</foreign>.
+               <lb/><persName>Julio</persName> este textículo les parece joda. 
+               <lb/>Solamente vos sabés que el
+               <lb/>más mínimo chiste se crea
+               <lb/>en momentos en que la 
+               <lb/>vida <foreign xml:lang="fr">est à l' <unclear>l</unclear> auteur de la mort</foreign>.
             </p>    
             </div>
          
@@ -51,53 +53,74 @@
          
          <!-- Aquí empiezan las posdatas y los cuadros de texto añadidos en las márgenes-->
         
-         <div type="posdata">
+         <div type="posdatas">
+            
+            <!--Posdata 1. Segundo párrafo de la dedicatoria-->            
             <p n="2">
-               PS
-               Me excedí, supongo.
-               Y he perdido, viejo amigo de tu
-               vieja <persName>Alejandra</persName> que
+               <lb/><abbr>P.S.</abbr>
+               <lb/>Me excedí, supongo. Y he
+               <lb/>perdido, viejo amigo de tu vieja
+               <lb/><persName>Alejandra</persName> que
                <subst>
                   <del>tuvo</del>
                   <add>tiene</add>
                </subst> 
-               miedo de todo salvo
-               (ahora, oh <persName>Julio</persName>) de la locura y de la muerte. (Hace
-               dos meses que estoy en el hospital. Excesos y luego
-               intento de suicidio -que fracasó, hélas)
+               miedo de
+               <lb/>todo salvo(ahora, oh <persName>Julio</persName>!)de la
+               <lb/>locura y de la muerte. (Hace dos meses
+               <lb/>que estoy en el hospital. Excesos y luego
+               <lb/>intento de suicidio -que fracasó, hélas.)
             </p>
             
-            <p n="3">
-               <add> <persName>Julio</persName> fui tan abajo. Pero no hay fondo
-                  <persName>Julio</persName>, creo que no tolero más las perras palabras
+            <!--Posdata 2. Cuadro -->
+              <p n="3">
+                <add> <lb/>PS -En el hospital aprendo
+                 <lb/>a convivir con los últimos desechos.
+                 <lb/>Mi mejor amiga es una sirvienta
+                 <lb/>de 18 años que mató a su hijo. Empecé
+                 <lb/>a leer diarios. Te apruebo mucho 
+                 <lb/>políticamente. Tu poema de Panorama<!--subrayado "Panorama"-->
+                 <lb/>es grande porque hizo bien <!--subrayado "que hizo bien"--> 
+                 <lb/>(lo leí en el hospital). </add>
+            </p>
+           </div> 
+         
+            <div type="recuadros">
+               <p n="4">
+                  <add> <lb/><persName>Julio</persName>, fui 
+                     <lb/>tan abajo. Pero
+                     <lb/>no hay fondo.
+                     <lb/><persName>Julio</persName>, creo que 
+                     <lb/>no tolero más "las perras
+                     <lb/>palabras."
                </add>               
             </p>
             
-            <p n="4">
-               <add>La locura, la muerte. <persName>Nadja</persName> no escribe.
-                  <name>Don Quijote</name> tampoco.
-                  <persName> Julio</persName>, odio a <persName>Artaud </persName>(mentira)
-                  porque no quisiera entender tan sospechosamente bien sus posibilidades de la imposibilidad.
+            <p n="5">
+               <add><lb/>La locura, la
+                  <lb/>muerte. <persName>Nadja</persName>
+                  <lb/>no escribe.<name>Don
+                     <lb/>Quijote</name>, tampoco.
+                  <lb/><persName> Julio</persName>, odio a 
+                  <lb/><persName>Artaud </persName>(mentira)
+                  <lb/>porque no quisiera
+                  <lb/>entender tan sospecho<lb break="no"/>samente bien 
+                  <lb/>sus posibilidades de la imposibilidad.
                </add> 
             </p>
+            </div>
             
-            <p n="5">
-               PS En el hospital aprendo a convivir con los últimos desechos.
-               Mi mejor amiga es una sirvienta de 18 años que mató a su hijo.
-               Empecé a leer Diarios. 
-               Te apruebo mucho políticamente.
-               Tu poema de Panorama es grande porque me hizo bien (lo leí en el hospital). 
-            </p>
+          
             
             <!-- Parte mecanografiada del papel-->
             <div type="otro">
-               <ab>De "PAPELES DE SON ARMADANS", n.° CLXXVII. <date when="1970-12">Diciembre de 1970</date>.
+               <ab>De "PAPELES DE SON ARMADANS", <abbr>n.°</abbr> CLXXVII. <date when="1970-12">Diciembre de 1970</date>.
                   <lb/>Tirada aparte de cincuenta
                   <lb/>ejemplares numerados. 
-                  <lb/>Ej. n° 14
+                  <lb/><abbr>Ej</abbr>. <abbr>n°</abbr> 14
                </ab>
             </div>
-         </div>
+        
       </body>
   </text>
 </TEI>
