@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>
+          Dedicatoria de un libro de <persName>Alejandra Pizarnik</persName> a <persName>Julio Cortázar</persName>
+        </title>
+        <author>
+          <persName>Alejandra Pizarnik</persName>
+        </author>
+      </titleStmt>
+      <publicationStmt>
+        <p>
+          Codificado por <persName>Nicolás Vaughan</persName> 
+          para el curso de <name type="curso">Herramientas Digitales</name>, 
+          <name type="institución">Universidad de los Andes</name>.
+          <date when-iso="2021-10-29">2021-10-29</date>
+        </p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>
+          Tomado de la página del <name type="institución">Instituto Cervantes</name>:
+          <ref>https://cvc.cervantes.es/literatura/libros_cortazar/libros_firmados04.htm</ref>.
+          El manuscrito data de <date when-iso="1972-09">septiembre de 1972</date>.
+        </p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      
+      
+      <div type="manuscrito">
+        <p>
+          <lb/><persName>Julio</persName>, este textículo les parece joda. 
+          <lb/>Solamente vos sabés que el 
+          <lb/>más mínimo chiste se crea 
+          <lb/>en momentos en que la 
+          <lb/>vida <foreign xml:lang="fra">est à l'auteur de la morte</foreign>.
+        </p>
+        <closer>
+          Muy tuya<corr>,</corr>
+          <signed><persName>Alejandra</persName></signed>
+        </closer>
+      </div>
+      
+      
+      <div type="manuscrito">
+        <p>
+          <lb/><persName>Julio</persName>, fui 
+          <lb/>tan abajo. Pero 
+          <lb/>no hay fondo.
+          <lb/><persName>Julio</persName>, creo que 
+          <lb/>no tolero más 
+          <lb/><gap reason="illegible"/><q>las perras 
+          <lb/>palabras</q>.
+        </p>
+      </div>
+      
+      
+      <div type="manuscrito">
+        <p>
+          <lb/>La locura, la 
+          <lb/>muerte. <persName>Nadja</persName> 
+          <lb/>no escribe. <persName>Don 
+          <lb/>Quijote</persName>, tampoco.
+          <lb/><persName>Julio</persName>, odio a 
+          <lb/><persName>Artaud</persName> (mentira) 
+          <lb/>porque no quisiera 
+          <lb/>entender tan 
+          sospecho<lb break="no"/>samente bien sus 
+          <lb/>posibilidades <unclear>de la im</unclear>posibilidad.
+          <!-- Aquí uso el elemento <unclear> porque hay una parte del texto
+            que no aparece en la imagen. -->
+        </p>
+      </div>
+      
+      
+      <div type="manuscrito">
+        <p>
+          <lb/><choice><abbr>P.S.</abbr><expan>Posdata</expan></choice> — En el hospital aprendo 
+          <lb/>a convivir con los últimos desechos. 
+          <lb/>Mi mejor amiga es una sirvienta 
+          <lb/>de <num>18</num> años que mató a su hijo. Empecé 
+          <lb/>a leer diarios. Te apruebo mucho 
+          <lb/>políticamente. Tu poema de <title>Panorama</title> 
+          <lb/>es grande porque me hizo bien (lo leí en el hospital).
+        </p>
+      </div>
+      
+      
+      <div type="manuscrito">
+        <p>
+          <lb/><choice><abbr>P.S.</abbr><expan>Posdata</expan></choice>
+          <lb/>Me excedí, supongo. Y he 
+          <lb/>perdido, viejo amigo de tu vieja 
+          <lb/><persName>Alejandra</persName> que <subst><del rend="tachado">tuvo</del><add>tiene</add></subst> miedo de 
+          <lb/>todo salvo (<corr>¡</corr>ahora, oh <persName>Julio</persName>!) de la
+          <lb/>locura y de la muerte. (Hace dos meses 
+          <lb/>que estoy en el hospital. Excesos y luego 
+          <lb/>intento de suicidio —que fracasó, <foreign xml:lang="gra">hélas</foreign>.)
+        </p>
+      </div>
+      
+      
+      <div type="impreso">
+        <p>
+          De <title>Papeles de Son Armadans</title>, <choice><abbr>n.°</abbr><expan>número</expan></choice> <num value="177">CLXXVII</num>.
+          Tirada aparte de cincuenta
+          ejemplares numerados.
+          <choice><abbr>Ej.</abbr><expan>Ejemplar</expan></choice> <choice><abbr>n.°</abbr><expan>número</expan></choice> <num value="14">14</num>
+        </p>
+      </div>
+      
+      
+    </body>
+  </text>
+</TEI>
